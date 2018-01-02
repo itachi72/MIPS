@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/work/fpga/MIPS/tb_alu_isim_beh.exe" -prj "D:/work/fpga/MIPS/tb_alu_beh.prj" "work.tb_alu" "work.glbl" 

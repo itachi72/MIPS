@@ -1,0 +1,23 @@
+Running: E:\xilinx_setup\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/work/fpga/MIPS/tb_alu_isim_beh.exe -prj D:/work/fpga/MIPS/tb_alu_beh.prj work.tb_alu work.glbl 
+ISim P.40xd (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/work/fpga/MIPS/ALU.v" into library work
+WARNING:HDLCompiler:751 - "D:/work/fpga/MIPS/ALU.v" Line 30: Redeclaration of ansi port zero is not allowed
+WARNING:HDLCompiler:489 - "D:/work/fpga/MIPS/ALU.v" Line 25: Illegal initial value of output port zero for module ALU ignored
+Analyzing Verilog file "D:/work/fpga/MIPS/tb_alu.v" into library work
+Analyzing Verilog file "E:/xilinx_setup/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 104740 KB
+Fuse CPU Usage: 327 ms
+Compiling module ALU
+Compiling module tb_alu
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable D:/work/fpga/MIPS/tb_alu_isim_beh.exe
+Fuse Memory Usage: 109332 KB
+Fuse CPU Usage: 358 ms

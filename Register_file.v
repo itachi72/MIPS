@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Register_file(
-    input [4:0] readreg_1,
+    input [4:0] readreg_1,				//5-bits for input address
     input [4:0] readreg_2,
     input [4:0] write_add,
     input [31:0] write_dat,
@@ -27,39 +27,14 @@ module Register_file(
     output [31:0] regdat_1,
     output [31:0] regdat_2
     );
-	
-	reg [31:0]reg_file[31:0];         //32 registers of 32-bits
-	reg [31:0]temp;
-	
-	initial
-	begin
-	reg_file[0] = 32'h00000000;
-	reg_file[1] = 32'h11111111;
-	reg_file[2] = 32'h22222222;
-	reg_file[3] = 32'h33333333;
-	reg_file[4] = 32'h44444444;
-	reg_file[5] = 32'h55555555;
-	reg_file[6] = 32'h66666666;
-	reg_file[7] = 32'h77777777;
-	reg_file[8] = 32'h88888888;
-	reg_file[9] = 32'h99999999;
-	reg_file[10] = 32'hAAAAAAAA;
-	reg_file[11] = 32'hBBBBBBBB;
-	reg_file[12] = 32'hCCCCCCCC;
-	reg_file[13] = 32'hDDDDDDDD;
-	reg_file[14] = 32'hEEEEEEEE;
-	reg_file[15] = 32'hFFFFFFFF;
-	end
+	reg [31:0]reg_file[15:0];         //16 registers of 32-bits
 	
 	always@(regwrite)
 	begin
 	if(regwrite == 1'b1)
-	reg_file[integer(write_add)] <= write_dat ;
+	reg_file[write_add] <= write_dat;
 	end
-
-//read data from the reg_address from input
-assign regdat_1 = reg_file[integer(readreg_1)];
-assign regdat_2 = reg_file[integer(readreg_2)];
-
+assign regdat_1 = reg_file[readreg_1];
+assign regdat_2 = reg_file[readreg_2];
 
 endmodule

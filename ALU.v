@@ -54,9 +54,10 @@ module ALU(
 	 4'b0111: begin
 			 temp = a1 && a2;
 			 end
+	 default: temp = 0;
    endcase
 //concurrent code
 
-assign salu_out = temp;
-assgin zero = (temp == 0) ? 1'b1 : 1'b0;
+assign alu_out = temp;
+assign zero = (temp == 0) ? 1'b1 : 1'b0;
 endmodule

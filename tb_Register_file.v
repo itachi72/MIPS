@@ -23,17 +23,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 module tb_Register_file;
-
 	// Inputs
 	reg [4:0] tb_readreg_1;
 	reg [4:0] tb_readreg_2;
 	reg [4:0] tb_write_add;
 	reg [31:0] tb_write_dat;
-	reg regwrite;
+	reg tb_regwrite;
    integer i=0;
 	// Outputs
 	wire [31:0] tb_regdat_1;
-	wire [31:0] tb_regdat_2;
+		wire [31:0] tb_regdat_2;
 
 	// Instantiate the Unit Under Test (UUT)
 	Register_file U1_reg (
@@ -47,26 +46,30 @@ module tb_Register_file;
 	);
 
 	initial begin
-		// Initialize Inputs
-		tb_readreg_1 = 1;
-		tb_readreg_2 = 1;
-		tb_write_add = 0;
-		tb_write_dat = 0;
-		tb_regwrite = 0;
-
-		// Wait 100 ns for global reset to finish
+		tb_regwrite = 1'b0;
+		#20;
+		tb_write_add = 5'b00001;				//1st register to be written to.
+		tb_write_dat = 32'h0000000f;
+		tb_regwrite = 1'b1;
 		#100;
 		
-		for(i=0; i<15; i=i+1)
-		begin
-		assign tb_readreg_1 <= i;
-		assign tb_readreg_2 <= i;
-		end
+		tb_regwrite = 0;
+		#20;
+		tb_write_add = 5'b00010;			  //2nd register to be written to.
+		tb_write_dat = 32'h000000f0;
+		tb_regwrite = 1;
+		#100;
 		
-        
-		// Add stimulus here
-
-	end
-      
+		tb_regwrite = 0;
+		#20;
+		tb_readreg_1 = 5'b00001;
+		tb_readreg_2 = 5'b00010;
+		
+		#300;
+		tb_readreg_1 = 5'b00011;
+		
+		#100;
+		$finish;
+	end     
 endmodule
 

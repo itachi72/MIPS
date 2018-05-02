@@ -1,0 +1,43 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+FDCPE_dir: FDCPE port map (dir,dir_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dir_D <= ((NOT right AND NOT dir)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (left AND dir));
+</td></tr><tr><td>
+FDCPE_q0: FDCPE port map (q(0),q_D(0),clk,'0','0',run);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q_D(0) <= ((dir AND NOT q(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT dir AND q(1)));
+</td></tr><tr><td>
+FDCPE_q1: FDCPE port map (q(1),q_D(1),clk,'0','0',run);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q_D(1) <= ((dir AND q(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT dir AND q(2)));
+</td></tr><tr><td>
+FDCPE_q2: FDCPE port map (q(2),q_D(2),clk,'0','0',run);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q_D(2) <= ((dir AND q(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT dir AND q(3)));
+</td></tr><tr><td>
+FDCPE_q3: FDCPE port map (q(3),q_D(3),clk,'0','0',run);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q_D(3) <= ((dir AND q(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT dir AND NOT q(0)));
+</td></tr><tr><td>
+FDCPE_run: FDCPE port map (run,run_D,clk,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;run_D <= ((NOT stop AND run)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (right AND left AND NOT run));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

@@ -1,0 +1,40 @@
+V3 31
+FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf 2018/04/13.16:56:20 P.40xd
+EN work/BUF4_MXILINX_jc2_top 1523618792 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/BUF4_MXILINX_jc2_top/BEHAVIORAL 1523618793 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf EN work/BUF4_MXILINX_jc2_top 1523618792 \
+      CP BUF
+EN work/FDC_MXILINX_jc2_top 1523618794 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/FDC_MXILINX_jc2_top/BEHAVIORAL 1523618795 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf EN work/FDC_MXILINX_jc2_top 1523618794 \
+      CP GND CP FDCP
+EN work/FJKC_MXILINX_jc2_top 1523618796 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/FJKC_MXILINX_jc2_top/BEHAVIORAL 1523618797 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf EN work/FJKC_MXILINX_jc2_top 1523618796 \
+      CP FDC_MXILINX_jc2_top CP AND3B2 CP AND3B1 CP OR3 CP AND2B1
+EN work/M2_1_MXILINX_jc2_top 1523618798 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/M2_1_MXILINX_jc2_top/BEHAVIORAL 1523618799 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf EN work/M2_1_MXILINX_jc2_top 1523618798 \
+      CP AND2B1 CP OR2 CP AND2
+EN work/SR4CLED_MXILINX_jc2_top 1523618800 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/SR4CLED_MXILINX_jc2_top/BEHAVIORAL 1523618801 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf \
+      EN work/SR4CLED_MXILINX_jc2_top 1523618800 CP OR2 CP M2_1_MXILINX_jc2_top \
+      CP FDCE
+EN work/jc2_top 1523618802 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf PB ieee/std_logic_1164 1350103243 \
+      PB ieee/NUMERIC_STD 1350103249 LB UNISIM PH unisim/VCOMPONENTS 1350103252
+AR work/jc2_top/BEHAVIORAL 1523618803 \
+      FL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf EN work/jc2_top 1523618802 \
+      CP FJKC_MXILINX_jc2_top CP INV CP OR2B2 CP GND CP SR4CLED_MXILINX_jc2_top \
+      CP BUF4_MXILINX_jc2_top

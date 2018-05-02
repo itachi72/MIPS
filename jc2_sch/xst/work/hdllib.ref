@@ -1,0 +1,12 @@
+EN buf4_mxilinx_jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl00 1523618792
+AR buf4_mxilinx_jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl01 1523618793
+EN fdc_mxilinx_jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl02 1523618794
+EN sr4cled_mxilinx_jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl08 1523618800
+EN m2_1_mxilinx_jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl06 1523618798
+EN jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl10 1523618802
+EN fjkc_mxilinx_jc2_top NULL E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl04 1523618796
+AR m2_1_mxilinx_jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl07 1523618799
+AR jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl11 1523618803
+AR sr4cled_mxilinx_jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl09 1523618801
+AR fjkc_mxilinx_jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl05 1523618797
+AR fdc_mxilinx_jc2_top behavioral E:/Projects/MIPS-master/jc2_sch/jc2_top.vhf sub00/vhpl03 1523618795

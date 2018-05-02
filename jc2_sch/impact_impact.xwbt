@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\Projects\MIPS-master\jc2_sch\impact.xsl
+OUTFILE=E:\Projects\MIPS-master\jc2_sch\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\Projects\MIPS-master\jc2_sch
+LICENSE=iMPACT
+USER_INFO=iMPACT

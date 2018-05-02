@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   14:41:33 12/28/2017
+// Create Date:   23:18:09 04/28/2018
 // Design Name:   MIPS
-// Module Name:   D:/work/fpga/MIPS/tb_mips.v
+// Module Name:   E:/Projects/MIPS-master/TB_mips.v
 // Project Name:  MIPS
 // Target Device:  
 // Tool versions:  
@@ -22,37 +22,27 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module tb_mips;
+module TB_mips;
 
 	// Inputs
-	reg tb_clk;
-	reg tb_reset;
+	reg clk;
+	reg rst;
 
 	// Instantiate the Unit Under Test (UUT)
-	MIPS M1 (
-		.clk(tb_clk), 
-		.reset(tb_reset)
+	MIPS uut (
+		.clk(clk), 
+		.rst(rst)
 	);
 
-   //defining clock
-	initial 
-	tb_clk = 0;
-	always
-	begin
-	#10 tb_clk = ~tb_clk;
-	end
-	
-	initial
-	#500 $finish;
-	
 	initial begin
 		// Initialize Inputs
+		clk = 0;
+		rst = 0;
 
 		// Wait 100 ns for global reset to finish
-		#500;
+		#100;
         
-		
-		$finish;
+		// Add stimulus here
 
 	end
       

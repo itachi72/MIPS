@@ -1,7 +1,41 @@
 ISim log file
-Running: D:\work\fpga\MIPS\tb_alu_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/work/fpga/MIPS/tb_alu_isim_beh.wdb 
-ISim P.40xd (signature 0x8ef4fb42)
+Running: E:\Projects\MIPS-master\MIPS_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb E:/Projects/MIPS-master/MIPS_isim_beh.wdb 
+ISim P.40xd (signature 0x7708f090)
 This is a Full version of ISim.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 24.  For instance MIPS/D1/, width 32 of formal port inst is not equal to width 1 of actual signal inst.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 24.  For instance MIPS/D1/, width 32 of formal port pc is not equal to width 1 of actual signal pc.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 24.  For instance MIPS/D1/, width 5 of formal port opcode is not equal to width 1 of actual signal opcode.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 25.  For instance MIPS/D1/, width 32 of formal port branch_tgt is not equal to width 1 of actual signal branch_tgt.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 25.  For instance MIPS/D1/, width 4 of formal port rd is not equal to width 1 of actual signal rd.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 25.  For instance MIPS/D1/, width 4 of formal port rs1 is not equal to width 1 of actual signal rs1.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 25.  For instance MIPS/D1/, width 4 of formal port rs2 is not equal to width 1 of actual signal rs2.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 25.  For instance MIPS/D1/, width 32 of formal port immx is not equal to width 1 of actual signal immx.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 27.  For instance MIPS/PC1/, width 32 of formal port pc_i is not equal to width 1 of actual signal pc_i.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 24.  For instance MIPS/PC1/, width 32 of formal port pc is not equal to width 1 of actual signal pc.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 29.  For instance MIPS/SE1/, width 16 of formal port in is not equal to width 1 of actual signal in.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 29.  For instance MIPS/SE1/, width 32 of formal port out is not equal to width 1 of actual signal out.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 31.  For instance MIPS/RF1/, width 5 of formal port readreg_1 is not equal to width 1 of actual signal tb_readreg_1.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 31.  For instance MIPS/RF1/, width 5 of formal port readreg_2 is not equal to width 1 of actual signal tb_readreg_2.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 31.  For instance MIPS/RF1/, width 5 of formal port write_add is not equal to width 1 of actual signal tb_write_add.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 32.  For instance MIPS/RF1/, width 32 of formal port write_dat is not equal to width 1 of actual signal tb_write_dat.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 32.  For instance MIPS/RF1/, width 32 of formal port regdat_1 is not equal to width 1 of actual signal tb_regdat_1.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 32.  For instance MIPS/RF1/, width 32 of formal port regdat_2 is not equal to width 1 of actual signal tb_regdat_2.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 34.  For instance MIPS/A1/, width 32 of formal port a1 is not equal to width 1 of actual signal tb_a1.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 34.  For instance MIPS/A1/, width 32 of formal port a2 is not equal to width 1 of actual signal tb_a2.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 34.  For instance MIPS/A1/, width 4 of formal port alu_ctrl is not equal to width 1 of actual signal tb_alu_ctrl.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 34.  For instance MIPS/A1/, width 32 of formal port alu_out is not equal to width 1 of actual signal tb_alu_out.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 24.  For instance MIPS/CU1/, width 5 of formal port opcode is not equal to width 1 of actual signal opcode.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 41.  For instance MIPS/IM1/, width 32 of formal port pc is not equal to width 1 of actual signal tb_pc.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 41.  For instance MIPS/IM1/, width 32 of formal port data is not equal to width 1 of actual signal tb_data.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 41.  For instance MIPS/IM1/, width 32 of formal port add is not equal to width 1 of actual signal tb_add.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 42.  For instance MIPS/IM1/, width 32 of formal port inst is not equal to width 1 of actual signal tb_inst.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 44.  For instance MIPS/MX1/, width 32 of formal port in0 is not equal to width 1 of actual signal tb_in0.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 44.  For instance MIPS/MX1/, width 32 of formal port in1 is not equal to width 1 of actual signal tb_in1.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 44.  For instance MIPS/MX1/, width 32 of formal port out is not equal to width 1 of actual signal tb_out.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 46.  For instance MIPS/MX3/, width 32 of formal port in_pc is not equal to width 1 of actual signal in_pc.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 46.  For instance MIPS/MX3/, width 32 of formal port in_mem is not equal to width 1 of actual signal in_mem.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 46.  For instance MIPS/MX3/, width 32 of formal port in_alu is not equal to width 1 of actual signal in_alu.
+WARNING: File "E:/Projects/MIPS-master/MIPS.v" Line 47.  For instance MIPS/MX3/, width 32 of formal port data is not equal to width 1 of actual signal data.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

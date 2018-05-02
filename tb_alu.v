@@ -44,18 +44,22 @@ module tb_alu;
 
 	initial begin
 		// Initialize Inputs
-		tb_a1 = 32'd34897;
-		tb_a2 = 32'd2389;
+		tb_a1 = 32'd0010;
+		tb_a2 = 32'd0001;
 		tb_alu_ctrl = 0;
-
+		
+		#100;
 		// Wait 100 ns for global reset to finish
-		#50 tb_alu_ctrl <= 4'b0000;       //add
-      #50 tb_alu_ctrl <= 4'b0001;  		 //sub
-      #50 tb_alu_ctrl <= 4'b0010;		 //and
-      #50 tb_alu_ctrl <= 4'b0011;		 //or
-      #50 tb_alu_ctrl <= 4'b0100;		 //nor
-		#50 tb_alu_ctrl <= 4'b0101;       //compare
-      #50 tb_alu_ctrl <= 4'b0110;       //bitwise or
+		#50 tb_alu_ctrl <= 4'b0001;       //add
+      #50 tb_alu_ctrl <= 4'b0010;  		 //sub
+      #50 tb_alu_ctrl <= 4'b0011;		 //and
+      #50 tb_alu_ctrl <= 4'b0100;		 //or
+      #50 tb_alu_ctrl <= 4'b0101;		 //nor
+		#50 tb_alu_ctrl <= 4'b0110;       //compare
+      #50 tb_alu_ctrl <= 4'b0111;       //bitwise or
+		
+		#100;
+		$finish;
   
 	end
       

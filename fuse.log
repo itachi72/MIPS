@@ -1,23 +1,52 @@
-Running: E:\xilinx_setup\14.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/work/fpga/MIPS/tb_alu_isim_beh.exe -prj D:/work/fpga/MIPS/tb_alu_beh.prj work.tb_alu work.glbl 
-ISim P.40xd (signature 0x8ef4fb42)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Running: C:\Xilinx\14.3\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o E:/Projects/MIPS-master/MIPS_isim_beh.exe -prj E:/Projects/MIPS-master/MIPS_beh.prj work.MIPS work.glbl 
+ISim P.40xd (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/work/fpga/MIPS/ALU.v" into library work
-WARNING:HDLCompiler:751 - "D:/work/fpga/MIPS/ALU.v" Line 30: Redeclaration of ansi port zero is not allowed
-WARNING:HDLCompiler:489 - "D:/work/fpga/MIPS/ALU.v" Line 25: Illegal initial value of output port zero for module ALU ignored
-Analyzing Verilog file "D:/work/fpga/MIPS/tb_alu.v" into library work
-Analyzing Verilog file "E:/xilinx_setup/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/sign_extender.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/Register_file.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/pc.v" into library work
+WARNING:HDLCompiler:751 - "E:/Projects/MIPS-master/pc.v" Line 27: Redeclaration of ansi port pc is not allowed
+Analyzing Verilog file "E:/Projects/MIPS-master/mux_3.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/mux.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/instruction_mem.v" into library work
+WARNING:HDLCompiler:751 - "E:/Projects/MIPS-master/instruction_mem.v" Line 29: Redeclaration of ansi port inst is not allowed
+Analyzing Verilog file "E:/Projects/MIPS-master/Decode.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/control_unit.v" into library work
+Analyzing Verilog file "E:/Projects/MIPS-master/ALU.v" into library work
+WARNING:HDLCompiler:751 - "E:/Projects/MIPS-master/ALU.v" Line 30: Redeclaration of ansi port zero is not allowed
+Analyzing Verilog file "E:/Projects/MIPS-master/MIPS.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 24: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 25: Size mismatch in connection of port <branch_tgt>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 27: Size mismatch in connection of port <pc_i>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 29: Size mismatch in connection of port <in>. Formal port size is 16-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 31: Size mismatch in connection of port <readreg_1>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 32: Size mismatch in connection of port <write_dat>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 34: Size mismatch in connection of port <a1>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 36: Size mismatch in connection of port <opcode>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 41: Size mismatch in connection of port <pc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 42: Size mismatch in connection of port <inst>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 44: Size mismatch in connection of port <in0>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 46: Size mismatch in connection of port <in_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "E:/Projects/MIPS-master/MIPS.v" Line 47: Size mismatch in connection of port <data>. Formal port size is 32-bit while actual signal size is 1-bit.
 Completed static elaboration
-Fuse Memory Usage: 104740 KB
-Fuse CPU Usage: 327 ms
+Compiling module Decode
+Compiling module Program_counter
+Compiling module sign_extender
+Compiling module Register_file
 Compiling module ALU
-Compiling module tb_alu
+Compiling module control_unit
+Compiling module instruction_mem
+Compiling module mux
+Compiling module mux_3
+Compiling module MIPS
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable D:/work/fpga/MIPS/tb_alu_isim_beh.exe
-Fuse Memory Usage: 109332 KB
-Fuse CPU Usage: 358 ms
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: The system cannot find the path specified, "isim\MIPS_isim_beh.exe.sim\libPortability.dll".
+Compiled 11 Verilog Units
+Built simulation executable E:/Projects/MIPS-master/MIPS_isim_beh.exe
+Fuse Memory Usage: 29052 KB
+Fuse CPU Usage: 499 ms

@@ -5,34 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1420" delta="unknown" >"D:/work/fpga/MIPS/Register_file.v" Line 57: Cast without &apos; violates IEEE 1800 syntax
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/Projects/MIPS-master/pc.v" Line 27: Redeclaration of ansi port <arg fmt="%s" index="1">pc</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1420" delta="unknown" >"D:/work/fpga/MIPS/Register_file.v" Line 61: Cast without &apos; violates IEEE 1800 syntax
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/Projects/MIPS-master/instruction_mem.v" Line 29: Redeclaration of ansi port <arg fmt="%s" index="1">inst</arg> is not allowed
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1420" delta="unknown" >"D:/work/fpga/MIPS/Register_file.v" Line 62: Cast without &apos; violates IEEE 1800 syntax
-</msg>
-
-<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 62: Syntax error near &quot;<arg fmt="%s" index="1">&lt;=</arg>&quot;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="806" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 63: Syntax error near &quot;<arg fmt="%s" index="1">&lt;=</arg>&quot;.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 55: Procedural assignment to a non-register <arg fmt="%s" index="1">tb_regwrite</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 55: Procedural assignment to a non-register <arg fmt="%s" index="1">tb_regwrite</arg> is not permitted, left-hand side should be reg/integer/time/genvar
-</msg>
-
-<msg type="error" file="HDLCompiler" num="58" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 62: <arg fmt="%s" index="1">i</arg> is not a task
-</msg>
-
-<msg type="error" file="HDLCompiler" num="58" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 63: <arg fmt="%s" index="1">i</arg> is not a task
-</msg>
-
-<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"D:/work/fpga/MIPS/tb_Register_file.v" Line 25: Module &lt;<arg fmt="%s" index="1">tb_Register_file</arg>&gt; ignored due to previous errors.
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"E:/Projects/MIPS-master/ALU.v" Line 30: Redeclaration of ansi port <arg fmt="%s" index="1">zero</arg> is not allowed
 </msg>
 
 </messages>

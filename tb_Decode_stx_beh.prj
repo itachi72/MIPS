@@ -1,0 +1,3 @@
+verilog isim_temp "Decode.v"
+verilog isim_temp "tb_Decode.v"
+verilog isim_temp "C:/Xilinx/14.3/ISE_DS/ISE//verilog/src/glbl.v"
